@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="D:\apps\xampp\htdocs\yourMerchandise\yourMerchandise.clpprj">
+	<settings><PM_URL><![CDATA[D:/project/]]></PM_URL><PM_HOME_URL><![CDATA[D:/project/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\index.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\login.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\signup.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\connection.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\homeCustomer.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\homeSeller.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\logout.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\save.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\add.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\deleteItem.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\cartplus.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\cartminus.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\money.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\cart.php"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\emptyCart.php"/>
+	</lastopfiles>
+	<todoblock>
+	</todoblock>
+	<filescache>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\signup.php" crc="1576767899"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\save.php" crc="1548525475"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\money.php" crc="1576769045"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\logout.php" crc="1547994332"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\login.php" crc="1575975285"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\index.php" crc="1576766214"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\homeSeller.php" crc="1576833481"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\homeCustomer.php" crc="1576874939"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\emptyCart.php" crc="1576874854"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\deleteItem.php" crc="1548606901"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\connection.php" crc="1547574126"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\cartplus.php" crc="1575987998"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\cartminus.php" crc="1575988060"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\cart.php" crc="1576874488"/>
+		<file name="D:\apps\xampp\htdocs\yourMerchandise\add.php" crc="1548608841"/>
+	</filescache>
+</project>

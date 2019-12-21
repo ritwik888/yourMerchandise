@@ -1,0 +1,10 @@
+<codestructure version="5.14">
+<phptree>
+<treenode node="connection.php;PHP:PHP Include;D:\apps\xampp\htdocs\yourMerchandise\login.php;f11;4;25;4;;D:\apps\xampp\htdocs\yourMerchandise\deleteItem.php;f9;2;23;2;;D:\apps\xampp\htdocs\yourMerchandise\add.php;f10;2;24;2;;D:\apps\xampp\htdocs\yourMerchandise\save.php;f11;40;25;40;;D:\apps\xampp\htdocs\yourMerchandise\homeSeller.php;f10;7;24;7;;D:\apps\xampp\htdocs\yourMerchandise\homeCustomer.php;f10;7;24;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="money.php;PHP:PHP Include;D:\apps\xampp\htdocs\yourMerchandise\homeSeller.php;f9;2;18;2;;D:\apps\xampp\htdocs\yourMerchandise\homeCustomer.php;f9;2;18;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="inCart;PHP:Function Name;D:\apps\xampp\htdocs\yourMerchandise\homeCustomer.php;f0;12;1;20;;;;vpos;;v;;r;;d0,13;;b0,0;;mitem;;p">
+</treenode>
+</phptree>
+</codestructure>
