@@ -1,5 +1,5 @@
 <?php
-	//hi ritwik
+	
 	session_start();
 	if(isset($_SESSION['id']))
 	{
@@ -8,7 +8,7 @@
 		else if($_SESSION['type']=="seller")
 		header('location:homeSeller.php');
 	}
-
+	
 ?>
 <html>
 <head>
@@ -25,9 +25,9 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-input:focus {
+input:focus { 
   outline: none;
-
+  
 }
 body{
 	background: url('images/bg-01.jpg');
@@ -90,7 +90,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0 25px;
-
+    
 }
 .logInBtn:hover
 {
@@ -116,11 +116,11 @@ function validate()
 }
 
 </script>
-</head>
+</head>	
 <body>
 	<div class="row">
 		<div class="col-xs-3">
-
+			
 		</div>
 		<div class="col-xs-6 logInBox">
 			<center><img src="images/logo.png" width="60%" style="margin-top:20px;"></center>
@@ -138,7 +138,7 @@ function validate()
 			</div>
 		</div>
 		<div class="col-xs-3">
-
+			
 		</div>
 	</div>
 </body>

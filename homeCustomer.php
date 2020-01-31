@@ -6,18 +6,18 @@ if(isset($_SESSION['user_id']))
 	if($_SESSION['type']!='customer')
 		header('location:index.php');
 	include('connection.php');
-	
+
 }
 else
 	header('location:index.php');
 function inCart($item)
-{	
+{
 	foreach($_SESSION['cart'] as $result)
 	{
 		if($result == $item)
 			return(true);
 	}
-	return(false);	
+	return(false);
 }
 ?>
 <html>
@@ -45,13 +45,13 @@ a
 {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 30px;
-	
+
 }
 .center {
   display: block;
   margin-left: 45%;
   margin-right: auto;
-  width: 30%;  
+  width: 30%;
 }
 </style>
 <head>
@@ -106,16 +106,16 @@ a
 		</tr>
 		<?php
 			$qry= "select * from product";
-			$run=mysql_query($qry);
+			$run=mysqli_query($con,$qry);
 			$i=1;
-			while($row=mysql_fetch_array($run))
+			while($row=mysqli_fetch_array($run))
 			{
 				$itemName=$row['name'];
 				$itemImage=$row['image'];
 				$itemId=$row['id'];
 				$itemPrice=$row['price'];
 				$seller=$row['sellerId'];
-			
+
 		?>
 		<tr>
 			<td><?php echo $i++; ?></td>

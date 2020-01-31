@@ -6,7 +6,7 @@ if(isset($_SESSION['user_id']))
 	if($_SESSION['type']!='seller')
 		header('location:index.php');
 	include('connection.php');
-	
+
 }
 else
 	header('location:index.php');
@@ -49,13 +49,13 @@ a
 {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 30px;
-	
+
 }
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;  
+  width: 25%;
 }
 </style>
 <head>
@@ -66,7 +66,7 @@ a
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	
+
 	<!-- intro table -->
 	<table width="100%" class="tab1">
 		<tr>
@@ -100,14 +100,14 @@ a
 		<?php
 			$seller=$_SESSION['user_id'];
 			$qry= "select * from product where sellerId='$seller'";
-			$run=mysql_query($qry);
+			$run=mysqli_query($con,$qry);
 			$i=1;
-			while($row=mysql_fetch_array($run))
+			while($row=mysqli_fetch_array($run))
 			{
 				$itemName=$row['name'];
 				$itemImage=$row['image'];
 				$itemId=$row['id'];
-				$itemPrice=$row['price'];			
+				$itemPrice=$row['price'];
 		?>
 		<tr>
 			<td><?php echo $i++; ?></td>
@@ -120,7 +120,7 @@ a
 			}
 		?>
 	</table>
-	
+
 	<!--Delete item form -->
 	<form method="post" action="deleteItem.php" class='delForm hid' id='delForm' autocomplete="off">
 		<br>
@@ -128,9 +128,9 @@ a
 		<input type="submit" value="submit" name="submit"/>
 		<button onclick="del()">Cancel</button><br><br>
 	</form>
-	
+
 	<!--Add item form -->
-	
+
 	<form method="post" action="add.php" enctype="multipart/form-data" class="addForm hid" id="addForm" autocomplete="off">
 		<table>
 		<tr>
@@ -147,10 +147,10 @@ a
 		<td><input type="number" name="price"/></td>
 		<td><input type="submit" value="ADD" name="submit"/></td>
 		<td><button onclick="add()">Cancle</button></td>
-		</tr>	
+		</tr>
 		</table>
 		</form>
-		
+
 	<!--Add and Delete buttons -->
 	<button onclick="add()" id="addBtn">Add Items</button>
 	<button onclick="del()" id="delBtn">Delete Item</button>

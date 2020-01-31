@@ -1,19 +1,7 @@
 <?php
 
-	$con= mysql_connect("localhost","root","");
-	if($con)
-	{
-		$db=mysql_select_db("yourmerchandise");
-		if($db)
-		{
-			//echo "Connected to database";
-		}
-		else
-		{
-			echo "Database not connected";
-		}
-	}
-	else
+	$con= mysqli_connect("localhost","id12217135_ritwik123","ritwik123","id12217135_yourmerchandise");
+	if(!$con)
 	{
 		echo "Not Connected to server";
 	}

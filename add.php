@@ -3,9 +3,9 @@
 	include('connection.php');
 	$name=$_POST['name'];
 	$g_image = $_FILES['image']['name'];
-	
-	$g_image_tmp = $_FILES['image']['tmp_name'];	
-	
+
+	$g_image_tmp = $_FILES['image']['tmp_name'];
+
 	if($g_image!="")
 	{
 		//$g_image = time();
@@ -43,7 +43,7 @@
 		sellerId='$seller',
 		image='$g_image'
 		";
-		$run=mysql_query($qry);
+		$run=mysqli_query($con,$qry);
 		if($run)
 		header('location:homeSeller.php');
 		else

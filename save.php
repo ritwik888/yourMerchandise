@@ -41,13 +41,13 @@
 		include('connection.php');
 		if($pass === $repass)
 		{
-			
-		
+
+
 			if($_POST['type']=='seller')
 			{
 				$query="SELECT email FROM seller WHERE email='$email'";
-				$run=mysql_query($query);
-				if(mysql_num_rows($run)>0)
+				$run=mysqli_query($con,$query);
+				if(mysqli_num_rows($run)>0)
 				{
 					$_SESSION['message']="Email already exist";
 					header('location:signup.php');
@@ -57,24 +57,24 @@
 						password = '$pass',
 						name = '$name'
 						";
-				$run=mysql_query($query);
+				$run=mysqli_query($con,$query);
 				$_SESSION['user_id'] = $email;
-		     
+
 		        $_SESSION['id'] = session_id();
-		        
+
 		        $_SESSION['type'] = "seller";
 				header('location:homeSeller.php');
 			}
 			elseif($_POST['type']=='customer')
 			{
 				$query="SELECT email FROM customer WHERE email='$email'";
-				$run=mysql_query($query);
-				if(mysql_num_rows($run)>0)
+				$run=mysqli_query($con,$query);
+				if(mysqli_num_rows($run)>0)
 				{
 					$_SESSION['message']="Email already exist";
 					header('location:signup.php');
 				}
-				if(mysql_num_rows($run)>0)
+				if(mysqli_num_rows($run)>0)
 				{
 					$_SESSION['message']="Email already exist";
 					header('location:signup.php');
@@ -84,15 +84,15 @@
 						password = '$pass',
 						name = '$name'
 						";
-				$run=mysql_query($query);
+				$run=mysqli_query($con,$query);
 						$_SESSION['user_id'] = $email;
-		     
+
 				        $_SESSION['id'] = session_id();
-				        
+
 				        $_SESSION['type'] = "customer";
 				header('location:homeCustomer.php');
-				
-			}	
+
+			}
 		}
 		else
 		{
