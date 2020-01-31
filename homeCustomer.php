@@ -114,7 +114,7 @@ a
 				$itemImage=$row['image'];
 				$itemId=$row['id'];
 				$itemPrice=$row['price'];
-				$seller=$row['sellerId'];
+				$seller=$row['sellerid'];
 
 		?>
 		<tr>
