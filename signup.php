@@ -28,7 +28,7 @@ if (isset($_SESSION['message']))
 {
 	overflow-x: hidden;
 }
-input:focus { 
+input:focus {
   outline: none;
 }
 .leftImg
@@ -155,7 +155,7 @@ function validate()
 <body>
 	<div class="row">
 		<div class="col-xs-8 leftImg">
-			
+
 		</div>
 		<div class="col-xs-4 back" style="padding-left: 40px;">
 		<span class="signUpTitle">Sign up</span>
@@ -181,8 +181,8 @@ function validate()
 /*
 function add()
 {
-	
-	
+
+
 }
 if(isset($_POST['submit']))
 {
