@@ -12,6 +12,7 @@ else
 	header('location:index.php');
 function inCart($item)
 {
+	if(isset($_SESSION['cart']))
 	foreach($_SESSION['cart'] as $result)
 	{
 		if($result == $item)
